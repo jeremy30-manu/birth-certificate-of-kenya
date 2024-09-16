@@ -5,7 +5,7 @@ function is_first_user() {
     $conn = get_db_connection();
     $stmt = $conn->query("SELECT * FROM users");
     $user = $stmt->fetch();
-    return $user === false;
+    return $user === fals;
 }
 
 if (is_first_user()) {
